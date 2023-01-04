@@ -1,0 +1,23 @@
+{
+  "root": "libs/sst-demo-library",
+  "sourceRoot": "libs/sst-demo-library/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/sst-demo-library/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/sst-demo-library"],
+      "options": {
+        "jestConfig": "libs/sst-demo-library/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

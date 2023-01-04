@@ -1,0 +1,14 @@
+2023-01-04T22:32:00.710Z  +1341ms [debug] Config loaded {"main":"sst/stacks/index.ts","stage":"jamieking","ssmPrefix":"/sst/sst/jamieking/","name":"sst","region":"us-east-1","paths":{"root":"/Users/jamieking/workspace/sst-nx-demo","out":"/Users/jamieking/workspace/sst-nx-demo/.sst","artifacts":"/Users/jamieking/workspace/sst-nx-demo/.sst/artifacts"},"version":"2.0.0-rc.9"}
+2023-01-04T22:32:00.735Z    +25ms [debug] Running esbuild on sst/stacks/index.ts to /Users/jamieking/workspace/sst-nx-demo/.sst/stacks.0.7444358760886935.mjs
+2023-01-04T22:32:00.867Z   +132ms [debug] Finished esbuild
+2023-01-04T22:32:00.867Z     +0ms [debug] Sourcing stacks
+2023-01-04T22:32:00.904Z    +37ms [debug] Finished sourcing stacks
+2023-01-04T22:32:00.904Z     +0ms [debug] Publishing event {"type":"stack.built","properties":{"metafile":{"inputs":{"sst/stacks/MyStack.ts":{"bytes":446,"imports":[{"path":"sst/constructs","kind":"import-statement","external":true},{"path":"<runtime>","kind":"import-statement","external":true}]},"sst/stacks/index.ts":{"bytes":425,"imports":[{"path":"sst/constructs","kind":"import-statement","external":true},{"path":"sst/stacks/MyStack.ts","kind":"import-statement","original":"./MyStack"},{"path":"<runtime>","kind":"import-statement","external":true}]}},"outputs":{".sst/stacks.0.7444358760886935.mjs":{"imports":[{"path":"sst/constructs","kind":"import-statement","external":true},{"path":"sst/constructs","kind":"import-statement","external":true}],"exports":["default"],"entryPoint":"sst/stacks/index.ts","inputs":{"sst/stacks/index.ts":{"bytesInOutput":197},"sst/stacks/MyStack.ts":{"bytesInOutput":317}},"bytes":2840}}}},"sourceID":"498c2acec61526440419f2d6fad54d20"}
+2023-01-04T22:32:00.904Z     +0ms [debug] Synthesizing stacks...
+2023-01-04T22:32:00.926Z    +22ms [debug] Using AWS profile 
+2023-01-04T22:32:00.990Z    +64ms [debug] Created AWS client STSClient
+2023-01-04T22:32:00.990Z     +0ms [debug] Initializing bootstrap context
+2023-01-04T22:32:00.991Z     +1ms [debug] Created AWS client SSMClient
+2023-01-04T22:32:01.173Z   +182ms [debug] Loaded bootstrap info:  {"version":"3","bucket":"sstbootstrap-useast124d14e4b-1gg65zzsboik3","stack":"SSTBootstrap"}
+2023-01-04T22:32:01.177Z     +4ms [debug] Using identity Account: 825818430386 User: AIDA4ARU5HOZNQFLJ3B4E
+2023-01-04T22:32:01.192Z    +15ms [debug] Running "npm_config_yes=true npx open-next@latest build" script
